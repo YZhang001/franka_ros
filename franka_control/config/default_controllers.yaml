@@ -58,3 +58,39 @@ franka_state_controller:
     - $(arg arm_id)_joint5
     - $(arg arm_id)_joint6
     - $(arg arm_id)_joint7
+
+custom_joint1_velocity_controller: 
+  type: velocity_controllers/JointVelocityController
+  joint: $(arg arm_id)_joint1
+  pid: {p: 10.0, i: 0.01, d: 1.0}
+
+custom_joint2_velocity_controller: 
+  type: velocity_controllers/JointVelocityController
+  joint: $(arg arm_id)_joint2
+  pid: {p: 10.0, i: 0.01, d: 1.0}
+  
+custom_joint3_velocity_controller: 
+  type: velocity_controllers/JointVelocityController
+  joint: $(arg arm_id)_joint3
+  pid: {p: 10.0, i: 0.01, d: 1.0}
+  
+custom_joint4_velocity_controller: 
+  type: velocity_controllers/JointVelocityController
+  joint: $(arg arm_id)_joint4
+  pid: {p: 10.0, i: 0.01, d: 1.0}
+  
+custom_joint5_velocity_controller: 
+  type: velocity_controllers/JointVelocityController
+  joint: $(arg arm_id)_joint5
+  pid: {p: 10.0, i: 0.01, d: 1.0}
+  
+custom_joint6_velocity_controller: 
+  type: velocity_controllers/JointVelocityController
+  joint: $(arg arm_id)_joint6
+  pid: {p: 10.0, i: 0.01, d: 1.0}
+  
+custom_joint7_velocity_controller: 
+  type: velocity_controllers/JointVelocityController
+  joint: $(arg arm_id)_joint7
+  pid: {p: 10.0, i: 0.01, d: 1.0}
+  
